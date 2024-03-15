@@ -25,6 +25,21 @@
 
 // Q.3
 
-// let skills = ["html", "css", "javascript", "react"]; 
-let str = "my name is susheel"
+// create a function you provided one arr you want to check the element is is first alement all the string in secound element
+
+var a = ["heffddsfllo", "jjj"];
+
+function check_element(arr) {
+    var fword = arr[0];
+    var sword = arr[1];
+
+    for (var i = 0; i < sword.length; i++){
+        var letter = sword[i]
+        if (fword.indexOf(letter) === -1)
+            return false
+    }
+    return true
+}
+
+console.log(check_element(a));
 
